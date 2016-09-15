@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <title>♛♛♛</title> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="about.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+   $(document).ready(function(){
+   $("a[title]").style_my_tooltips({
+   tip_follows_cursor:true,
+   tip_delay_time:30,
+   tip_fade_speed:300,
+   attribute:"title"
+   });
+    });
+    })(jQuery);
+        $(document).ready(function(){ 
+        $(".updt").hide(); 
+        $(".upd").click(function(){ 
+        $(this).next(".updt").slideToggle('fast'); 
+    }); 
+    });
+</script>
+</head>
+
+<body>
+
+<div id="box">
+
+<h2><a href="/"><img src="http://65.media.tumblr.com/038aa4617d75923ebe72ca500cf1b9d6/tumblr_inline_mo4ujjb3VC1qz4rgp.jpg"/></a> </h2>
+
+<div class="tabs">
+<div class="tabsbox">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">HOME</a></li>
+        <li><a href="#tab2">DOELEN</a></li>
+        <li><a href="#tab3">STUDIES</a></li>
+        <li><a href="#tab4">WERKERVARING</a></li>
+        <li><a href="#tab5">PROJECTEN</a></li>
+    </ul>
+</div>
+
+<div class="tab-content">
+<div id="tab1" class="tab active">
+
+ <h2>Algemene gegevens</h2>
+        <b>NAAM:</b> Sara van Bezooyen <br>
+        <b>LEEFTIJD:</b> 19 jaar <br>
+        <b>WOONPLAATS:</b> Dordrecht <br>
+
+    <h2>Meer</h2>
+        <p>Momenteel zit ik in het eerste leerjaar van Applicatie Ontwikkelaar. Hiervoor heb ik de opleiding Pedagogisch Medewerker afgerond. Daarnaast werk ik bij een reparatie bedrijf. </p>
+        <p>Ik ben een erg rustig meisje, altijd al geweest. In het begin was het echt een aandachtspunt voor mij,  ik had moeite met initiatief nemen en op de voorgrond te treden. Inmiddels ben ik erachter gekomen dat het ook weer een kwaliteit van mij is. Doordat ik erg rustig ben straal ik veiligheid en vertrouwen uit wat mensen vaak erg fijn vinden. Het is een kwaliteit, maar het is ook mijn valkuil. Dat weet ik gelukkig ook van mezelf en ben ik daar bewust mee bezig. Wat ook een kwaliteit van mij is dat ik erg geduldig ben en een harde werker ben. Ik schiet bijna nooit uit mijn plaat, maar probeer het op te lossen. </p>
+
+    <h2><a href="https://www.davinci.nl/">Da Vinci College Dordrecht</a></h2>
+
+</div>
+
+<div id="tab2" class="tab">
+<div class="tabcontent">
+
+ <h2>Persoonlijke doelen:</h2>
+        <p>Momenteel heb ik niet echt doelen. Ik wil na deze niveau 4 opleiding graag door naar het HBO. De opleiding die mij nu erg aanspreekt bij het HBO is Business IT en Management </p>
+        <p>Wat mij ook erg leuk lijkt is de opleiding Psychologie en om mij dan te specialiseren in Kinderpsychologie. Ik ben zelf nog een beetje aan het rond kijken wat ik echt leuk vindt en wat ik graag wil doen. Zodoende ben ik uit gekomen op de opleiding Applicatie Ontwikkelaar. Dat was het eerste wat mij aansprak na de kinderopvang.</p>
+
+</div>
+</div>
+        
+<div id="tab3" class="tab">
+<div class="tabcontent">
+
+<div class="links">
+
+    <h3>Studies</h3>  
+        <li>VMBO KB (Behaald)</li>
+        <li>Pedagogisch Medewerker niveau 3 (Behaald)</li>
+        <li>Applicatie ontwikkelaar niveau 4 (Bezig)</li>
+
+    <h3>Certificaten</h3>
+        <li>Kinder EHBO</li>
+
+    <h3>ICT</h3>    
+        <li>HTML</li>
+        <li>CSS</li>
+
+</div>
+
+</div>
+</div>
+
+<div id="tab4" class="tab">
+<div class="tabcontent">
+
+ <h2>Werkervaring</h2> 
+
+    <h3>Jumbo Supermarkten</h3>
+        <p>September 2013 tot Augustus 2015: Vakkenvuller en Kassa.</p>
+    <h3>CE Repair Service</h3>
+        <p>Augustus 2015 tot heden: Logistiek, Planning en Administratie.</p>
+
+</div>
+</div>
+<div id="tab5" class="tab">
+<div class="tabcontent">
+
+<h2>Projecten</h2>
+<p>In progress</p>
+
+</div>
+</div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
+ 
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).fadeIn(600).siblings().hide();
+ 
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#filterOptions li a').click(function() {
+    // fetch the class of the clicked item
+    var ourClass = $(this).attr('class');
+
+    // reset the active class on all the buttons
+    $('#filterOptions li').removeClass('active');
+    // update the active state on our clicked button
+    $(this).parent().addClass('active');
+
+    if(ourClass == 'all') {
+      // show all our items
+      $('#ourHolder').children('div.item').show();
+    }
+    else {
+      // hide all elements that don't share ourClass
+      $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+      // show all elements that do share ourClass
+      $('#ourHolder').children('div.' + ourClass).show();
+    }
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>

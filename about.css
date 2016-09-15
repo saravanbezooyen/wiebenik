@@ -1,0 +1,156 @@
+body {
+    font-family: Cambria; 
+    font-size:12px;
+    line-height:normal;
+    color:#898989;
+    background-image: url("http://67.media.tumblr.com/104734d99773550c3811063ccbcb3158/tumblr_inline_mlkykhBik31r53miq.png");
+    background-color: #cccccc;
+
+}
+
+.links, .links h2 {text-align:left;}
+
+a:link, a:active, a:visited {
+    color:#E99494; 
+    letter-spacing:1px;
+    font-size:12px;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:1px 2px;
+    outline:none;
+    -moz-outline-style:none;
+    transition:0.5s ease;
+    -o-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -webkit-transition:0.5s ease;
+}
+ 
+a:hover {
+    color:#87A58C; 
+    text-decoration:none;}
+
+ 
+b, strong {
+    font-size:10px;
+    color:#87A58C; 
+}
+ 
+i, em {
+    font-size:10px;
+    color:#8c8c8c; 
+    letter-spacing:1px;
+    word-spacing:1px;
+    padding:0 2px;
+}
+ 
+u {
+    font-size:10px;
+    color:#666666; 
+    text-decoration:none;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+/* Box */
+
+#box {
+    width:500px;
+    height:auto;
+    margin:100px auto;
+    padding:5px 10px 10px 10px;
+    background:#fff; 
+    border:2px solid black;
+    text-align:left;  
+}
+
+h2 {
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:bold;
+    text-align:left;  
+    letter-spacing:1px;
+}
+
+h2 img {
+    display:block;
+    width:100px;
+    height:100px;
+    margin:0 auto;
+}
+
+
+
+/* Tabs */
+
+.tabs {
+    width:100%;
+    margin-left:0px;
+    display:inline-block;
+}
+
+.tabsbox {
+    text-align:center;
+    margin-top:-10px;
+    margin-left:-30px;
+}
+
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+ 
+.tab-links li {
+    margin-right:5px;
+    display:inline-block;
+    list-style:none;
+    text-transform:uppercase;
+}
+ 
+.tab-links a {
+    padding:7px;
+    display:inline-block;
+    transition:all linear 0.20s;
+    border-bottom:1px solid transparent;
+}
+ 
+.tab-links a:hover {
+    border-bottom:1px solid #eee;
+    text-decoration:none;
+}
+ 
+li.active a, li.active a:hover {
+    background:transparent;
+    color:#313131;
+    border-bottom:1px solid #eee;
+    background:#fff;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.tab-content {
+    padding:10px;
+    max-height:270px;
+    overflow:auto;
+}
+
+.tab {display:none;}
+.tab.active {display:block;}
+
+#s-m-t-tooltip {
+    max-width:300px; 
+    padding:3px 5px; 
+    margin:10px 0px 0px 20px;
+    background-color:white; 
+    border-radius: 0px; 
+    border:1px solid #eee; 
+    font-family:calibri; 
+    font-size:10px;
+    text-transform:uppercase; 
+    letter-spacing:1px;
+    word-spacing:1px;
+    color:#bdbdbd;
+    z-index:999999999999999999999999999999999999;
+}
